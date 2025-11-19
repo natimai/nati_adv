@@ -1,0 +1,51 @@
+
+ 
+
+export default function AboutArea() {
+  return (
+    <section className="wiondefault-bg wionsection-padding">
+      <div className="container">
+        <div className="wionabout-content2">
+          <div className="row">
+            <div className="col-xl-5 col-lg-4">
+              <div className="wionsub-title aos-init" data-aos-delay="400" data-aos="fade-up">
+                <p>מי אני בעצם?</p>
+              </div>
+            </div>
+            <div className="col-xl-7 col-lg-8">
+              <div className="wionabout-content-data aos-init" data-aos-delay="500" data-aos="fade-up">
+                <h3>
+                  נתי מימון, בן 29 מקריית גת.
+                  <br /><br />
+                  רגע, אבל מספרים זה משעמם. בואו ניתן להם הקשר:
+                  יש לי צוות מקצועי מאחורי הקלעים - מעצבים, כותבים, מומחי קמפיינים.
+                  אבל אתם תמיד מדברים איתי.
+                  <br /><br />
+                  למה אני שונה? כי שום דבר לא נופל בין הכיסאות. אני האחראי על הכל.
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div className="mt-150">
+            <div className="row">
+              <div className="col-sm-6">
+                <div className="animation-container">
+                  <div className="wionabout-thumb3 box">
+                    <img src="assets/images/about/thumb17.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div className="col-sm-6">
+                <div className="animation-container">
+                  <div className="wionabout-thumb3 thumb4 box3">
+                    <img src="assets/images/about/thumb18.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

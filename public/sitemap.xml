@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
+  <url>
+    <loc>https://natiadv.co.il/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://natiadv.co.il/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://natiadv.co.il/service</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://natiadv.co.il/portfolio</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://natiadv.co.il/blog</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://natiadv.co.il/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://natiadv.co.il/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://natiadv.co.il/privacy-policy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://natiadv.co.il/terms-of-use</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://natiadv.co.il/accessibility-statement</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Portfolio Items -->
+  <url><loc>https://natiadv.co.il/portfolio/1</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://natiadv.co.il/portfolio/2</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://natiadv.co.il/portfolio/3</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://natiadv.co.il/portfolio/4</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Blog Posts -->
+  <url><loc>https://natiadv.co.il/blog/1</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://natiadv.co.il/blog/2</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://natiadv.co.il/blog/3</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://natiadv.co.il/blog/4</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://natiadv.co.il/blog/5</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://natiadv.co.il/blog/6</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://natiadv.co.il/blog/7</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://natiadv.co.il/blog/8</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://natiadv.co.il/blog/9</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://natiadv.co.il/blog/10</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://natiadv.co.il/blog/11</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://natiadv.co.il/blog/12</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+</urlset>
+

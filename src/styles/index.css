@@ -1,0 +1,53 @@
+@import "/assets/css/app.min.css"; 
+
+:root {
+  --heading-font: 'Assistant', sans-serif;
+  --body-font: 'Assistant', sans-serif;
+}
+
+body {
+  font-family: 'Assistant', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Assistant', sans-serif;
+  font-weight: 800;
+}
+
+/* Header Logo Responsive Sizing */
+.header-logo img {
+  max-width: 180px; /* Default size for desktop */
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .header-logo img {
+    max-width: 140px; /* Smaller on tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .header-logo img {
+    max-width: 120px; /* Smallest on mobile */
+  }
+}
+
+/* Footer Logo Responsive Sizing */
+.wionfooter-logo img {
+  max-width: 180px; /* Same as header default */
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .wionfooter-logo img {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 576px) {
+  .wionfooter-logo img {
+    max-width: 120px;
+  }
+}
