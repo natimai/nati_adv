@@ -1,4 +1,3 @@
-import React from 'react';
 import Wrapper from '../../layouts/Wrapper';
 import HeaderThree from '../../layouts/headers/HeaderThree';
 import FooterOne from '../../layouts/footers/FooterOne';

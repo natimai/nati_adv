@@ -4,16 +4,10 @@ import {  Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomeOne from "./components/homes/home-1";
 import ErrorBoundary from "./components/ErrorBoundary";
-import HomeTwo from "./components/homes/home-2";
-import HomeThree from "./components/homes/home-3";
 import AboutOne from "./components/abouts/about-1";
-import AboutTwo from "./components/abouts/about-2";
-import AboutThree from "./components/abouts/about-3";
 import Service from "./components/service";
 import ServiceDetails from "./components/single-service";
 import PortfolioOne from "./components/portfolio-1";
-import PortfolioTwo from "./components/portfolio-2";
-import PortfolioThree from "./components/portfolio-3";
 import PortfolioDetails from "./components/single-portfolio";
 import Team from "./components/team";
 import TeamDetails from "./components/single-team";
@@ -22,8 +16,6 @@ import Pricing from "./components/pricing";
 import Blog from "./components/blog";
 import BlogDetails from "./components/single-blog";
 import Contactus1 from "./components/contact-us1";
-import Contactus2 from "./components/contact-us2";
-import Contactus3 from "./components/contact-us3";
 import { PrivacyPolicy, TermsOfUse, AccessibilityStatement } from "./components/legal";
 import NotFound from "./error";
 import SchemaMarkup from "./common/SchemaMarkup";
@@ -51,12 +43,7 @@ const router = createBrowserRouter([
 
 
   { path: "*", element: <NotFound /> },
-], {
-  future: {
-    v7_startTransition: true,
-    v7_relativeSplatPath: true,
-  }
-});
+]);
 
 function App() {
   return (
