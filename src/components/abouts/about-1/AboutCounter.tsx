@@ -17,17 +17,17 @@ const counter_data: CounterItem[] = [
   {
     value: 50,
     suffix: "+",
-    label: "לקוחות מרוצים",
+    label: "לקוחות מרוצים (ועוד סופרים...)",
   },
   {
     value: 300,
     suffix: "%",
-    label: "גידול ממוצע במכירות",
+    label: "גידול ממוצע במכירות ללקוח",
   },
   {
     value: 100,
     suffix: "%",
-    label: "אמיתי",
+    label: "שקיפות ואמינות (בלי חרטות)",
   },
 ];
 
@@ -48,7 +48,7 @@ export default function AboutCounter() {
                 </span> 
               </h2>
               <div className="wioncounter-data">
-                <p>{item.label}</p>
+                <p style={{ color: '#fff' }}>{item.label}</p>
               </div>
             </div>
             ))}  

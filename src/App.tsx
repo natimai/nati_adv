@@ -17,6 +17,7 @@ import Blog from "./components/blog";
 import BlogDetails from "./components/single-blog";
 import Contactus1 from "./components/contact-us1";
 import { PrivacyPolicy, TermsOfUse, AccessibilityStatement } from "./components/legal";
+import ServiceAreas from "./components/legal/ServiceAreas";
 import NotFound from "./error";
 import SchemaMarkup from "./common/SchemaMarkup";
 
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
   { path: "/privacy-policy", element: <PrivacyPolicy /> },
   { path: "/terms-of-use", element: <TermsOfUse /> },
   { path: "/accessibility-statement", element: <AccessibilityStatement /> },
+  { path: "/service-areas", element: <ServiceAreas /> },
 
 
   { path: "*", element: <NotFound /> },

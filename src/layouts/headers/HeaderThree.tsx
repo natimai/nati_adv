@@ -18,7 +18,7 @@ export default function HeaderThree() {
             <div className="col-8 col-sm-auto ">
               <div className="header-logo">
                 <Link to="/">
-                  <img src="assets/images/logo/fulllogo.svg" alt="logo" />
+                  <img src="assets/Pictures/nati_logo.svg" alt="logo" />
                 </Link>
               </div>
             </div>

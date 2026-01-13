@@ -1,6 +1,7 @@
  
 
 import team_img_1 from "../../public/assets/images/team/team1.png";
+import nati_img from "../../public/assets/Pictures/nati_pro.jpg";
 import team_img_2 from "../../public/assets/images/team/team2.png";
 import team_img_3 from "../../public/assets/images/team/team3.png";
 import team_img_4 from "../../public/assets/images/team/team4.png";
@@ -25,9 +26,9 @@ export interface TeamItem {
 const team_data: TeamItem[] = [
   {
     id: 1,
-    img: team_img_1,
-    name: "Ava Reynolds",
-    role: "Creative Director",
+    img: nati_img,
+    name: "Nati Maimon",
+    role: "CEO & Founder",
     dataAos: "fade-up",
     dataAosDelay: 300,
   },

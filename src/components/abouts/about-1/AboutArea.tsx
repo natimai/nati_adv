@@ -14,8 +14,8 @@ export default function AboutArea() {
             </div>
             <div className="col-xl-7 col-lg-8">
               <div className="wionabout-content-data aos-init" data-aos-delay="500" data-aos="fade-up">
-                <h3>
-                  נתי מימון, בן 29 מקריית גת.
+                <h3 className="h3-title">
+                  נתי מימון - מומחה לשיווק דיגיטלי בקריית גת
                   <br /><br />
                   רגע, אבל מספרים זה משעמם. בואו ניתן להם הקשר:
                   יש לי צוות מקצועי מאחורי הקלעים - מעצבים, כותבים, מומחי קמפיינים.
@@ -31,14 +31,14 @@ export default function AboutArea() {
               <div className="col-sm-6">
                 <div className="animation-container">
                   <div className="wionabout-thumb3 box">
-                    <img src="assets/images/about/thumb17.png" alt="" />
+                    <img src="assets/Pictures/nati_pro.jpg" alt="נתי מימון - יועץ שיווק ומיתוג לעסקים בקריית גת" style={{ borderRadius: '10px' }} />
                   </div>
                 </div>
               </div>
               <div className="col-sm-6">
                 <div className="animation-container">
                   <div className="wionabout-thumb3 thumb4 box3">
-                    <img src="assets/images/about/thumb18.png" alt="" />
+                    <img src="assets/Pictures/nati_looking_sky.jpg" alt="חזון ושיווק יצירתי - משרד פרסום בדרום" style={{ borderRadius: '10px' }} />
                   </div>
                 </div>
               </div>

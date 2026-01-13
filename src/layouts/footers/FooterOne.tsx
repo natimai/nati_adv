@@ -1,6 +1,7 @@
  
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
+import SEOFAQ from '../../common/SEOFAQ';
 
 
 const setting1 = {
@@ -132,13 +133,13 @@ const FooterOne = () => {
                     <h4>עקבו אחרינו</h4>
                     <ul>
                       <li>
-                        <a href="https://www.instagram.com/">Instagram</a>
+                        <a href="https://www.instagram.com/natiadv" target="_blank" rel="noopener noreferrer">Instagram</a>
                       </li>
                       <li>
-                        <a href="https://www.facebook.com/">Facebook</a>
+                        <a href="https://www.facebook.com/natiadv" target="_blank" rel="noopener noreferrer">Facebook</a>
                       </li>
                       <li>
-                        <a href="https://www.linkedin.com/">LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/natiadv" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                       </li>
                     </ul>
                   </div>
@@ -154,6 +155,9 @@ const FooterOne = () => {
                       <li>
                         <Link to="/privacy-policy">מדיניות פרטיות</Link>
                       </li>
+                      <li>
+                        <Link to="/service-areas">אזורי שירות</Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -164,12 +168,13 @@ const FooterOne = () => {
           <div className="wionfooter-bottom-wrap">
             <div className="wionfooter-logo">
               <Link to="/">
-                <img src="assets/images/logo/fulllogo.svg" alt="Footer Logo" />
+                <img src="assets/Pictures/nati_logo.svg" alt="Footer Logo" />
               </Link>
             </div>
             <div className="wionfooter-bottom-text">
               <p>© כל הזכויות שמורות {new Date().getFullYear()} נתי פרסום ושיווק</p>
             </div>
+            <SEOFAQ />
           </div>
         </div>
       </div>

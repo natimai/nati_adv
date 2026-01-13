@@ -121,7 +121,7 @@ export default function Contactus1Area() {
                     <i className="ri-map-pin-line" style={{fontSize: '32px', color: '#000'}}></i>
                  </div>
                  <h5>כתובת</h5>
-                 <p>קריית גת</p>
+                 <p>כרמי גת, קריית גת</p>
               </div>
             </div>
              <div className="col-lg-4 col-md-6 mb-30">
@@ -130,7 +130,7 @@ export default function Contactus1Area() {
                     <i className="ri-mail-line" style={{fontSize: '32px', color: '#000'}}></i>
                  </div>
                  <h5>אימייל</h5>
-                 <p>בקרוב...</p>
+                 <p>netanel18999@gmail.com</p>
               </div>
             </div>
         </div>

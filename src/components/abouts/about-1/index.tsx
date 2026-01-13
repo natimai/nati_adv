@@ -9,12 +9,14 @@ import HeaderThree from "../../../layouts/headers/HeaderThree";
 import DividedArea from "../../../common/DividedArea";
 import FooterOne from "../../../layouts/footers/FooterOne";
 import SEO from "../../../common/SEO";
+import Breadcrumb from "../../../common/Breadcrumb";
 
 export default function AboutOne() {
 	return (
 		<Wrapper>
       <SEO title="אודות" description="נעים להכיר, אני נתי מימון. בעלים של משרד פרסום שנותן בראש ומביא תוצאות אמיתיות לעסקים." />
 			<HeaderThree />
+      <Breadcrumb title="אודות" />
       <DividedArea />
 			<HeroAbout />
       <DividedArea />

@@ -16,53 +16,47 @@ export default function Sidebar({ setOffCanvasOpen, offCanvasOpen }: SidebarProp
         <div className={`wionsidemenu-column2 ${offCanvasOpen ? 'active' : ''}`}>
           <div className="wionsidemenu-body">
             <div className="wionsidebar-wrap">
-              <div className="wionsidebar-header-icon">
-                <Link to="/">
-                  <img src="assets/images/logo/logo-dark.svg" alt="Icon" />
-                </Link>
-              </div>
-              <div className="mt-50">
-                <div className="wionsidebar-content">
-                  <p>We are a team of creators crafting memorable brands and digital experiences.</p>
-                  <img src="assets/images/hero/thumb7.png" alt="Thumb" />
+                <div className="wionsidebar-header-icon">
+                  <Link to="/">
+                    <img src="assets/Pictures/nati_logo.svg" alt="Icon" />
+                  </Link>
+                </div>
+                <div className="mt-50">
+                  <div className="wionsidebar-content">
+                    <p>נתי פרסום ושיווק - משרד פרסום דיגיטלי המתמחה בקידום אורגני, ממומן, בניית אתרים ומיתוג.</p>
+                    <img src="assets/Pictures/nati_magic.jpg" alt="Thumb" style={{ borderRadius: '10px' }} />
+                  </div>
+                <div className="wionsidebar-content2">
+                  <h4>כתובתנו</h4>
+                  <p>כרמי גת, קריית גת</p>
                 </div>
                 <div className="wionsidebar-content2">
-                  <h4>Visit Us</h4>
-                  <p>6587 Roller Derby Lane, Canada, and 730 Grant Street, San Francisco</p>
-                </div>
-                <div className="wionsidebar-content2">
-                  <h4>Call Us</h4>
-                  <p>Call us and we’ll get back to you soon.
-                    <a href="tel:123">(123) 456-7890</a>
+                  <h4>צרו קשר</h4>
+                  <p>התקשרו אלינו ונשמח לעזור
+                    <a href="tel:0544445567">054-444-5567</a>
                   </p>
                 </div>
                 <div className="wionsidebar-content2 pb-0">
-                  <h4>Join Our Community</h4>
-                  <p>Connect with like-minded professionals and stay updated.</p>
+                  <h4>עקבו אחרינו</h4>
+                  <p>הישארו מעודכנים ברשתות החברתיות</p>
                   <div className="wionsidebar-social">
                     <ul>
                       <li>
-                        <a href="https://www.twitter.com">
+                        <a href="https://www.facebook.com/natiadv" target="_blank" rel="noopener noreferrer">
                           <img className="social-show" src="assets/images/svg/fb.svg" alt="" />
                           <img className="social-hide" src="assets/images/svg/fb.svg" alt="" />
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.facebook.com">
-                          <img className="social-show" src="assets/images/svg/in.svg" alt="" />
-                          <img className="social-hide" src="assets/images/svg/in.svg" alt="" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="https://www.instagram.com">
+                        <a href="https://www.instagram.com/natiadv" target="_blank" rel="noopener noreferrer">
                           <img className="social-show" src="assets/images/svg/ins.svg" alt="" />
                           <img className="social-hide" src="assets/images/svg/ins.svg" alt="" />
                         </a>
                       </li>
                       <li>
-                        <a href="https://www.linkedin.com">
-                          <img className="social-show" src="assets/images/svg/twter.svg" alt="" />
-                          <img className="social-hide" src="assets/images/svg/twter.svg" alt="" />
+                        <a href="https://www.linkedin.com/in/natiadv" target="_blank" rel="noopener noreferrer">
+                          <img className="social-show" src="assets/images/svg/in.svg" alt="" />
+                          <img className="social-hide" src="assets/images/svg/in.svg" alt="" />
                         </a>
                       </li>
                     </ul>

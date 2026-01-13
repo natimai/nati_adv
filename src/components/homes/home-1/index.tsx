@@ -25,7 +25,7 @@ export default function HomeOne() {
 
   return (
     <Wrapper>
-      <SEO title="ראשי" description="נתי פרסום ושיווק - משרד פרסום דיגיטלי המתמחה בקידום אורגני, ממומן, בניית אתרים ומיתוג." />
+      <SEO title="ראשי" description="נתי פרסום ושיווק - משרד פרסום בקריית גת המתמחה בקידום אורגני, ממומן, בניית אתרים ומיתוג לעסקים בדרום ובכל הארץ." />
       <HomeLayout header={<HeaderOne />} footer={<FooterOne />} sections={sections} />
     </Wrapper>
   );
