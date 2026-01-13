@@ -2,6 +2,7 @@
 import { useParams, Link } from 'react-router-dom';
 import blog_data from '../../data/blog-data';
 import SEO from '../../common/SEO';
+import ArticleSchema from '../../common/ArticleSchema';
 
 export default function BlogDetailsArea() {
   const { id } = useParams();
@@ -18,7 +19,22 @@ export default function BlogDetailsArea() {
 
   return (
     <section className="wionabout-section1 wiondefault-bg">
-      <SEO title={item.title} description={item.shortDesc || item.title} />
+      <SEO
+        title={item.title}
+        description={item.metaDescription || item.shortDesc || item.title}
+        keywords={item.keywords?.join(", ")}
+      />
+      {item.datePublished && item.author && (
+        <ArticleSchema
+          title={item.title}
+          description={item.metaDescription || item.shortDesc || item.title}
+          datePublished={item.datePublished}
+          author={item.author}
+          image={`https://natiadv.co.il${item.img}`}
+          keywords={item.keywords}
+          url={`https://natiadv.co.il${item.link}`}
+        />
+      )}
       <div className="container">
         <div className="wionsection-title center max-w100">
           <div className="wionsub-title title3 aos-init" data-aos-delay="400" data-aos="fade-up">
@@ -30,7 +46,7 @@ export default function BlogDetailsArea() {
           <div className="col-lg-8">
             <div className="blog-page-wrap aos-init" data-aos-delay="700" data-aos="fade-up">
               <div className="wionblog-single-thumb">
-                <img src={item.img} alt={item.title} />
+                <img src={item.img} alt={item.title} loading="lazy" decoding="async" />
               </div>
               <div className="wionblog-meta">
                 <ul>

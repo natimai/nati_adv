@@ -1,26 +1,35 @@
  
 
-import {  Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import HomeOne from "./components/homes/home-1";
 import ErrorBoundary from "./components/ErrorBoundary";
-import AboutOne from "./components/abouts/about-1";
-import Service from "./components/service";
-import ServiceDetails from "./components/single-service";
-import PortfolioOne from "./components/portfolio-1";
-import PortfolioDetails from "./components/single-portfolio";
-import Team from "./components/team";
-import TeamDetails from "./components/single-team";
-import Faq from "./components/faq";
-import Pricing from "./components/pricing";
-import Blog from "./components/blog";
-import BlogDetails from "./components/single-blog";
-import Contactus1 from "./components/contact-us1";
-import { PrivacyPolicy, TermsOfUse, AccessibilityStatement } from "./components/legal";
-import ServiceAreas from "./components/legal/ServiceAreas";
-import CityPage from "./components/legal/CityPage";
-import NotFound from "./error";
 import SchemaMarkup from "./common/SchemaMarkup";
+import SkeletonLoader from "./components/common/SkeletonLoader";
+
+// Eager load home page for better initial load
+import HomeOne from "./components/homes/home-1";
+
+// Lazy load other routes
+const AboutOne = lazy(() => import("./components/abouts/about-1"));
+const Service = lazy(() => import("./components/service"));
+const ServiceDetails = lazy(() => import("./components/single-service"));
+const PortfolioOne = lazy(() => import("./components/portfolio-1"));
+const PortfolioDetails = lazy(() => import("./components/single-portfolio"));
+const Team = lazy(() => import("./components/team"));
+const TeamDetails = lazy(() => import("./components/single-team"));
+const Faq = lazy(() => import("./components/faq"));
+const Pricing = lazy(() => import("./components/pricing"));
+const Blog = lazy(() => import("./components/blog"));
+const BlogDetails = lazy(() => import("./components/single-blog"));
+const Contactus1 = lazy(() => import("./components/contact-us1"));
+const ServiceAreas = lazy(() => import("./components/legal/ServiceAreas"));
+const CityPage = lazy(() => import("./components/legal/CityPage"));
+const NotFound = lazy(() => import("./error"));
+
+// Lazy load legal pages
+const PrivacyPolicy = lazy(() => import("./components/legal").then(m => ({ default: m.PrivacyPolicy })));
+const TermsOfUse = lazy(() => import("./components/legal").then(m => ({ default: m.TermsOfUse })));
+const AccessibilityStatement = lazy(() => import("./components/legal").then(m => ({ default: m.AccessibilityStatement })));
 
 
 
@@ -51,18 +60,10 @@ function App() {
   return (
     <ErrorBoundary>
       <SchemaMarkup />
-      <Suspense fallback={<div className="preloader">
-        <div className="preloader-inner">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>}>
+      <Suspense fallback={<SkeletonLoader />}>
         <RouterProvider router={router} />
       </Suspense>
     </ErrorBoundary>
-
   );
 }
 

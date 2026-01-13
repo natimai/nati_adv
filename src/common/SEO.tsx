@@ -4,9 +4,10 @@ interface SEOProps {
   title: string;
   description?: string;
   keywords?: string;
+  canonical?: string;
 }
 
-const SEO = ({ title, description, keywords }: SEOProps) => {
+const SEO = ({ title, description, keywords, canonical }: SEOProps) => {
   const defaultTitle = "נתי פרסום ושיווק - משרד פרסום בקריית גת והדרום";
   const defaultDescription = "נתי פרסום ושיווק - משרד פרסום דיגיטלי מוביל בקריית גת. מומחים בקידום אתרים, פרסום ממומן, מיתוג ואסטרטגיה דיגיטלית לעסקים בדרום ובכל הארץ.";
   const defaultKeywords = "משרד פרסום בקריית גת, פרסום בקריית גת, שיווק דיגיטלי בקריית גת, קידום אתרים בקריית גת, נתי פרסום ושיווק, בניית אתרים בקריית גת, מיתוג עסקים בדרום";
@@ -16,6 +17,8 @@ const SEO = ({ title, description, keywords }: SEOProps) => {
       <title>{title ? `${title} | נתי פרסום ושיווק` : defaultTitle}</title>
       <meta name="description" content={description || defaultDescription} />
       <meta name="keywords" content={keywords || defaultKeywords} />
+      {canonical && <link rel="canonical" href={canonical} />}
+
       <meta property="og:title" content={title ? `${title} | נתי פרסום ושיווק` : defaultTitle} />
       <meta property="og:description" content={description || defaultDescription} />
       <meta property="og:type" content="website" />
@@ -23,7 +26,8 @@ const SEO = ({ title, description, keywords }: SEOProps) => {
       <meta property="og:locale" content="he_IL" />
       <meta property="og:image" content="https://natiadv.co.il/assets/Pictures/nati_pro.webp" />
       <meta property="og:image:alt" content="נתי פרסום ושיווק - משרד פרסום בקריית גת" />
-      
+      {canonical && <meta property="og:url" content={canonical} />}
+
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title ? `${title} | נתי פרסום ושיווק` : defaultTitle} />
@@ -35,7 +39,7 @@ const SEO = ({ title, description, keywords }: SEOProps) => {
       <meta name="geo.placename" content="Kiryat Gat" />
       <meta name="geo.position" content="31.611;34.769" />
       <meta name="ICBM" content="31.611, 34.769" />
-      
+
       {/* Add more meta tags as needed */}
     </Helmet>
   );

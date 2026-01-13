@@ -1,10 +1,10 @@
  
-import blog_img_1 from "../../public/assets/images/blog/b1.png";
-import blog_img_2 from "../../public/assets/images/blog/b2.png";
-import blog_img_3 from "../../public/assets/images/blog/b3.png"; 
-import blog_img_4 from "../../public/assets/images/blog/b12.png";
-import blog_img_5 from "../../public/assets/images/blog/b13.png";
-import blog_img_6 from "../../public/assets/images/blog/b14.png";
+import blog_img_1 from "../../public/assets/images/blog/b1.webp";
+import blog_img_2 from "../../public/assets/images/blog/b2.webp";
+import blog_img_3 from "../../public/assets/images/blog/b3.webp";
+import blog_img_4 from "../../public/assets/images/blog/b12.webp";
+import blog_img_5 from "../../public/assets/images/blog/b13.webp";
+import blog_img_6 from "../../public/assets/images/blog/b14.webp";
 
 export interface BlogItem {
   id: number;
@@ -18,6 +18,10 @@ export interface BlogItem {
   link: string;
   dataAos?: string;
   dataAosDelay?: number;
+  metaDescription?: string;
+  author?: string;
+  datePublished?: string;
+  keywords?: string[];
 }
 
 const year = new Date().getFullYear();

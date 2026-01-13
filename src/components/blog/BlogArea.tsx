@@ -23,7 +23,7 @@ export default function BlogArea() {
                 <div key={item.id} className={`wionblog-wrap mb-0 ${index > 0 ? 'mt-50' : ''} aos-init`} data-aos-delay={item.dataAosDelay || 400} data-aos="fade-up">
                   <div className="wionblog-thumb">
                     <Link to={item.link}>
-                      <img src={item.img} alt={item.title} />
+                      <img src={item.img} alt={item.title} loading="lazy" decoding="async" />
                     </Link>
                     <Link to={item.link}>
                       <div className="wionblog-btn">{item.category}</div>

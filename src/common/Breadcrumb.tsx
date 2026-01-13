@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Breadcrumb = ({ title }: { title: string }) => {
   const location = useLocation();
@@ -20,32 +21,61 @@ const Breadcrumb = ({ title }: { title: string }) => {
     }
   };
 
-  return (
-    <div className="wionbreadcrumb-section" style={{ padding: '20px 0', background: '#f9f9f9' }}>
-      <div className="container">
-        <div className="wionbreadcrumb-title">
-          <ul style={{ display: 'flex', gap: '10px', listStyle: 'none', padding: 0, margin: 0 }}>
-            <li>
-              <Link to="/">ראשי</Link>
-            </li>
-            {pathnames.map((value, index) => {
-              const last = index === pathnames.length - 1;
-              const to = `/${pathnames.slice(0, index + 1).join("/")}`;
+  // Generate BreadcrumbList schema
+  const breadcrumbItems = [
+    { name: "ראשי", url: "https://natiadv.co.il/" }
+  ];
 
-              return last ? (
-                <li key={to} className="active" style={{ color: '#666' }}>
-                  <span> / </span> {title || translatePath(value)}
-                </li>
-              ) : (
-                <li key={to}>
-                  <span> / </span> <Link to={to}>{translatePath(value)}</Link>
-                </li>
-              );
-            })}
-          </ul>
+  pathnames.forEach((value, index) => {
+    const url = `https://natiadv.co.il/${pathnames.slice(0, index + 1).join("/")}`;
+    const name = index === pathnames.length - 1 ? (title || translatePath(value)) : translatePath(value);
+    breadcrumbItems.push({ name, url });
+  });
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbItems.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": item.name,
+      "item": item.url
+    }))
+  };
+
+  return (
+    <>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
+      </Helmet>
+      <div className="wionbreadcrumb-section" style={{ padding: '20px 0', background: '#f9f9f9' }}>
+        <div className="container">
+          <div className="wionbreadcrumb-title">
+            <ul style={{ display: 'flex', gap: '10px', listStyle: 'none', padding: 0, margin: 0 }}>
+              <li>
+                <Link to="/">ראשי</Link>
+              </li>
+              {pathnames.map((value, index) => {
+                const last = index === pathnames.length - 1;
+                const to = `/${pathnames.slice(0, index + 1).join("/")}`;
+
+                return last ? (
+                  <li key={to} className="active" style={{ color: '#666' }}>
+                    <span> / </span> {title || translatePath(value)}
+                  </li>
+                ) : (
+                  <li key={to}>
+                    <span> / </span> <Link to={to}>{translatePath(value)}</Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
