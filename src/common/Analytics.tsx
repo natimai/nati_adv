@@ -7,7 +7,7 @@ declare global {
   }
 }
 
-const TRACKING_ID = ""; // הכנס כאן את ה-Measurement ID שלך (למשל: G-XXXXXXXXXX)
+const TRACKING_ID = "G-XXXXXXXXXX"; // TODO: החלף ב-Measurement ID אמיתי מ-Google Analytics 4
 
 const Analytics = () => {
   const location = useLocation();

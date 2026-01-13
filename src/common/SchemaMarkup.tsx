@@ -5,7 +5,12 @@ export default function SchemaMarkup() {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "נתי פרסום ושיווק",
-    "image": "https://natiadv.co.il/assets/Pictures/nati_logo.svg",
+    "alternateName": "Nati Advertising & Marketing",
+    "image": [
+      "https://natiadv.co.il/assets/Pictures/nati_logo.svg",
+      "https://natiadv.co.il/assets/Pictures/nati_pro.webp",
+      "https://natiadv.co.il/assets/Pictures/nati_magic.webp"
+    ],
     "description": "נתי פרסום ושיווק - משרד פרסום מוביל בקריית גת והדרום. שירותי שיווק דיגיטלי, בניית אתרים ומיתוג לעסקים שרוצים לגדול.",
     "@id": "https://natiadv.co.il",
     "url": "https://natiadv.co.il",
@@ -15,13 +20,49 @@ export default function SchemaMarkup() {
       "@type": "PostalAddress",
       "streetAddress": "קריית גת",
       "addressLocality": "קריית גת",
+      "postalCode": "8210000",
+      "addressRegion": "דרום",
       "addressCountry": "IL"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 31.611, 
+      "latitude": 31.611,
       "longitude": 34.769
     },
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "קריית גת"
+      },
+      {
+        "@type": "City",
+        "name": "אשקלון"
+      },
+      {
+        "@type": "City",
+        "name": "באר שבע"
+      },
+      {
+        "@type": "City",
+        "name": "שדרות"
+      },
+      {
+        "@type": "City",
+        "name": "נתיבות"
+      },
+      {
+        "@type": "City",
+        "name": "אופקים"
+      },
+      {
+        "@type": "City",
+        "name": "יבנה"
+      },
+      {
+        "@type": "City",
+        "name": "גן יבנה"
+      }
+    ],
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [
@@ -39,6 +80,35 @@ export default function SchemaMarkup() {
       "https://www.instagram.com/natiadv",
       "https://www.linkedin.com/in/natiadv"
     ],
+    "knowsAbout": [
+      "SEO",
+      "Search Engine Optimization",
+      "קידום אתרים",
+      "PPC",
+      "Google Ads",
+      "פרסום ממומן",
+      "Digital Marketing",
+      "שיווק דיגיטלי",
+      "Content Marketing",
+      "שיווק תוכן",
+      "Branding",
+      "מיתוג",
+      "Web Design",
+      "עיצוב אתרים",
+      "Social Media Marketing",
+      "שיווק ברשתות חברתיות"
+    ],
+    "potentialAction": {
+      "@type": "CommunicateAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://natiadv.co.il/contact",
+        "actionPlatform": [
+          "http://schema.org/DesktopWebPlatform",
+          "http://schema.org/MobileWebPlatform"
+        ]
+      }
+    },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "שירותי שיווק דיגיטלי",
