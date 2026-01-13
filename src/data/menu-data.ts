@@ -30,11 +30,11 @@ const menu_data: MenuItem[] = [
     link: "/service",
     has_dropdown: true,
     sub_menus: [
-      { title: "קידום אורגני (SEO)", link: "/service" },
-      { title: "קמפיינים ממומנים (PPC)", link: "/service" },
-      { title: "אנליטיקה ומדידה", link: "/service" },
-      { title: "תוכן שעובד", link: "/service" },
-      { title: "מיתוג ועיצוב גרפי", link: "/service" },
+      { title: "קידום אורגני (SEO)", link: "/service/seo" },
+      { title: "קמפיינים ממומנים (PPC)", link: "/service/ppc" },
+      { title: "אנליטיקה ומדידה", link: "/service/analytics" },
+      { title: "תוכן שעובד", link: "/service/content" },
+      { title: "מיתוג ועיצוב גרפי", link: "/service/branding" },
     ],
   },
   {
