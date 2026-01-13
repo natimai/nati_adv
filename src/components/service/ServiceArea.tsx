@@ -19,7 +19,7 @@ export default function ServiceArea() {
           <div className="row">
             <div className="col-lg-6">
               <div className="wionservice-d-thumb">
-                <img src="assets/images/service/thumb6.png" alt="קידום אתרים אורגני (SEO) לעסקים בקריית גת והדרום" />
+                <img src="assets/images/service/thumb6.webp" alt="קידום אתרים אורגני (SEO) לעסקים בקריית גת והדרום" />
               </div>
             </div>
             <div className="col-lg-6 d-flex align-items-center">
@@ -44,8 +44,8 @@ export default function ServiceArea() {
                 <div className="mt-50">
                   <Link className="wiondefault-btn" to="/contact">דברו איתי
                     <span className="wionbutton-icon">
-                      <img className="arry1" src="assets/images/svg/arrow-right.png" alt="" />
-                      <img className="arry2" src="assets/images/svg/arrow-right.png" alt="" />
+                      <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+                      <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
                     </span>
                   </Link>
                 </div>
@@ -59,7 +59,7 @@ export default function ServiceArea() {
           <div className="row">
             <div className="col-lg-6 order-lg-2">
               <div className="wionservice-d-thumb">
-                <img src="assets/images/service/thumb7.png" alt="ניהול קמפיינים ממומנים בגוגל ופייסבוק - משרד פרסום בקריית גת" />
+                <img src="assets/images/service/thumb7.webp" alt="ניהול קמפיינים ממומנים בגוגל ופייסבוק - משרד פרסום בקריית גת" />
               </div>
             </div>
             <div className="col-lg-6 d-flex align-items-center">
@@ -84,8 +84,8 @@ export default function ServiceArea() {
                 <div className="mt-50">
                   <Link className="wiondefault-btn" to="/contact">דברו איתי
                     <span className="wionbutton-icon">
-                      <img className="arry1" src="assets/images/svg/arrow-right.png" alt="" />
-                      <img className="arry2" src="assets/images/svg/arrow-right.png" alt="" />
+                      <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+                      <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
                     </span>
                   </Link>
                 </div>
@@ -99,7 +99,7 @@ export default function ServiceArea() {
           <div className="row">
             <div className="col-lg-6">
               <div className="wionservice-d-thumb">
-                <img src="assets/images/service/thumb8.png" alt="מיתוג ועיצוב גרפי לעסקים - סטודיו למיתוג בדרום" />
+                <img src="assets/images/service/thumb8.webp" alt="מיתוג ועיצוב גרפי לעסקים - סטודיו למיתוג בדרום" />
               </div>
             </div>
             <div className="col-lg-6 d-flex align-items-center">
@@ -124,8 +124,8 @@ export default function ServiceArea() {
                 <div className="mt-50">
                   <Link className="wiondefault-btn" to="/contact">דברו איתי
                     <span className="wionbutton-icon">
-                      <img className="arry1" src="assets/images/svg/arrow-right.png" alt="" />
-                      <img className="arry2" src="assets/images/svg/arrow-right.png" alt="" />
+                      <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+                      <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
                     </span>
                   </Link>
                 </div>
@@ -139,7 +139,7 @@ export default function ServiceArea() {
           <div className="row">
             <div className="col-lg-6 order-lg-2">
               <div className="wionservice-d-thumb">
-                <img src="assets/images/service/thumb9.png" alt="אנליטיקה ומדידה דיגיטלית - שיפור ביצועי שיווק" />
+                <img src="assets/images/service/thumb9.webp" alt="אנליטיקה ומדידה דיגיטלית - שיפור ביצועי שיווק" />
               </div>
             </div>
             <div className="col-lg-6 d-flex align-items-center">
@@ -164,8 +164,8 @@ export default function ServiceArea() {
                 <div className="mt-50">
                   <Link className="wiondefault-btn" to="/contact">דברו איתי
                     <span className="wionbutton-icon">
-                      <img className="arry1" src="assets/images/svg/arrow-right.png" alt="" />
-                      <img className="arry2" src="assets/images/svg/arrow-right.png" alt="" />
+                      <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+                      <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
                     </span>
                   </Link>
                 </div>
@@ -179,7 +179,7 @@ export default function ServiceArea() {
           <div className="row">
             <div className="col-lg-6">
               <div className="wionservice-d-thumb">
-                <img src="assets/images/service/thumb10.png" alt="כתיבת תוכן שיווקי וניהול סושיאל - נתי פרסום ושיווק" />
+                <img src="assets/images/service/thumb10.webp" alt="כתיבת תוכן שיווקי וניהול סושיאל - נתי פרסום ושיווק" />
               </div>
             </div>
             <div className="col-lg-6 d-flex align-items-center">
@@ -204,8 +204,8 @@ export default function ServiceArea() {
                 <div className="mt-50">
                   <Link className="wiondefault-btn" to="/contact">דברו איתי
                     <span className="wionbutton-icon">
-                      <img className="arry1" src="assets/images/svg/arrow-right.png" alt="" />
-                      <img className="arry2" src="assets/images/svg/arrow-right.png" alt="" />
+                      <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+                      <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
                     </span>
                   </Link>
                 </div>

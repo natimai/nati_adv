@@ -14,7 +14,7 @@ export default function Contactus2Area() {
         <div className="row">
           <div className="col-lg-5">
             <div className="wioncontact-thumb aos-init" data-aos-delay="600" data-aos="fade-up">
-              <img src="assets/images/service/thumb13.png" alt="" />
+              <img src="assets/images/service/thumb13.webp" alt="" />
             </div>
           </div>
           <div className="col-lg-7">
@@ -67,8 +67,8 @@ export default function Contactus2Area() {
 
                 <button className="wiondefault-btn submit-btn mt-50">שלח הודעה
                   <span className="wionbutton-icon">
-                    <img className="arry1" src="assets/images/svg/arrow-right.png" alt="" />
-                    <img className="arry2" src="assets/images/svg/arrow-right.png" alt="" />
+                    <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+                    <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
                   </span>
                 </button>
               </form>

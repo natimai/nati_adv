@@ -55,8 +55,8 @@ const HeaderOne = () => {
             <div className="col-auto d-flex align-items-center">
               <a className="wiondefault-btn wionheader-btn" href="https://wa.me/972544445567?text=%D7%94%D7%99%D7%99%20%D7%A0%D7%AA%D7%99%2C%20%D7%90%D7%A0%D7%99%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%94%D7%A8%D7%99%D7%9D%20%D7%90%D7%AA%20%D7%94%D7%A2%D7%A1%D7%A7%20%D7%A9%D7%9C%D7%99%20%D7%9C%D7%A9%D7%9C%D7%91%20%D7%94%D7%91%D7%90" target="_blank" rel="noopener noreferrer">צור קשר
                 <span className="wionbutton-icon">
-                  <img className="arry1" src="assets/images/svg/arrow-right.png" alt="" />
-                  <img className="arry2" src="assets/images/svg/arrow-right.png" alt="" />
+                  <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+                  <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
                 </span>
               </a>
               <div className="wionheader-menu">

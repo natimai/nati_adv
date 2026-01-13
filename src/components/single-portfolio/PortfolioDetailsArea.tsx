@@ -70,7 +70,7 @@ export default function PortfolioDetailsArea() {
           
           {/* Optional secondary image if we had one, for now reusing main or removing */}
           {/* <div className="wionp-single-thumb pt-40">
-            <img src="assets/images/portfolio/thumb12.png" alt="" />
+            <img src="assets/images/portfolio/thumb12.webp" alt="" />
           </div> */}
 
           <div className="wionp-single-wrap">

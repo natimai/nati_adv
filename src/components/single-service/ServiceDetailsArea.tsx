@@ -13,7 +13,7 @@ export default function ServiceDetailsArea() {
         </div>
         <div className="wionservice-d-wrapper aos-init" data-aos-delay="700" data-aos="fade-up">
           <div className="wionservice-d-thumb">
-            <img src="assets/images/service/thumb11.png" alt="" />
+            <img src="assets/images/service/thumb11.webp" alt="" />
           </div>
           <div className="wionservice-single-wrap">
             <div className="wionservice-single-data mt-50">
@@ -45,7 +45,7 @@ export default function ServiceDetailsArea() {
 
           </div>
           <div className="wionservice-single-thumb pt-40">
-            <img src="assets/images/service/thumb12.png" alt="" />
+            <img src="assets/images/service/thumb12.webp" alt="" />
           </div>
           <div className="wionservice-single-wrap mt-40">
             <div className="wionservice-single-data">

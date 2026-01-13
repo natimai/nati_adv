@@ -10,12 +10,12 @@ export default function FooterThree() {
         <div className="wioncta-wrap3">
           <div className="animation-container scroll3">
             <div className="wionhero-thumb4 box6">
-              <img src="assets/images/cta/thumb1.png" alt="" />
+              <img src="assets/images/cta/thumb1.webp" alt="" />
             </div>
           </div>
           <div className="animation-container scroll4">
             <div className="wionhero-thumb4 thumb5 box7">
-              <img src="assets/images/cta/thumb2.png" alt="" />
+              <img src="assets/images/cta/thumb2.webp" alt="" />
             </div>
           </div>
           <div className="wionsub-title title2 aos-init" data-aos-delay="400" data-aos="fade-up">

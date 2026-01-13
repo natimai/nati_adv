@@ -21,7 +21,7 @@ interface PortfolioItem {
 const portfolio_data: PortfolioItem[] = [
   {
     id: 1,
-    img: "/assets/images/portfolio/thumb1.png",
+    img: "/assets/images/portfolio/thumb1.webp",
     category: "סרטון ויראלי 🎵 TikTok",
     date: "2024",
     title: "מסעדת הדרומית",
@@ -38,7 +38,7 @@ const portfolio_data: PortfolioItem[] = [
   },
   {
     id: 2,
-    img: "/assets/images/portfolio/thumb2.png",
+    img: "/assets/images/portfolio/thumb2.webp",
     category: "קמפיין לידים (PPC)",
     date: "2024",
     title: "משרד עורכי דין",
@@ -55,7 +55,7 @@ const portfolio_data: PortfolioItem[] = [
   },
   {
     id: 3,
-    img: "/assets/images/portfolio/thumb3.png",
+    img: "/assets/images/portfolio/thumb3.webp",
     category: "מיתוג ואסטרטגיה",
     date: "2024",
     title: "חנות איקומרס אופנה",
@@ -72,7 +72,7 @@ const portfolio_data: PortfolioItem[] = [
   },
   {
     id: 4,
-    img: "/assets/images/portfolio/thumb4.png",
+    img: "/assets/images/portfolio/thumb4.webp",
     category: "קידום אורגני (SEO)",
     date: "2024",
     title: "רשת מרפאות שיניים",

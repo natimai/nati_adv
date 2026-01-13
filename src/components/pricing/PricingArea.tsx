@@ -36,8 +36,8 @@ export default function PricingArea() {
             <div className="wionpricing-footer mt-50">
               <Link className="wiondefault-btn" to="/contact-us1">Choose the plan
                 <span className="wionbutton-icon">
-                  <img className="arry1" src="assets/images/svg/arrow-right.png" alt="" />
-                  <img className="arry2" src="assets/images/svg/arrow-right.png" alt="" />
+                  <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+                  <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
                 </span>
               </Link>
             </div>
@@ -65,8 +65,8 @@ export default function PricingArea() {
             <div className="wionpricing-footer mt-50">
               <Link className="wiondefault-btn" to="/contact-us2">Choose the plan
                 <span className="wionbutton-icon">
-                  <img className="arry1" src="assets/images/svg/arrow-right.png" alt="" />
-                  <img className="arry2" src="assets/images/svg/arrow-right.png" alt="" />
+                  <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+                  <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
                 </span>
               </Link>
             </div>
@@ -94,8 +94,8 @@ export default function PricingArea() {
             <div className="wionpricing-footer mt-50">
               <Link className="wiondefault-btn" to="/contact-us3">Choose the plan
                 <span className="wionbutton-icon">
-                  <img className="arry1" src="assets/images/svg/arrow-right.png" alt="" />
-                  <img className="arry2" src="assets/images/svg/arrow-right.png" alt="" />
+                  <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+                  <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
                 </span>
               </Link>
             </div>

@@ -20,8 +20,8 @@ const NotFound = () => {
             <div className="wion404-btn-group" style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
               <Link to="/" className="wiondefault-btn">חזרה לדף הבית
                 <span className="wionbutton-icon">
-                  <img className="arry1" src="/assets/images/svg/arrow-right.png" alt="" />
-                  <img className="arry2" src="/assets/images/svg/arrow-right.png" alt="" />
+                  <img className="arry1" src="/assets/images/svg/arrow-right.webp" alt="" />
+                  <img className="arry2" src="/assets/images/svg/arrow-right.webp" alt="" />
                 </span>
               </Link>
               <Link to="/contact" className="wiondefault-btn white-outline" style={{ color: '#1d1d1b', borderColor: '#1d1d1b' }}>דווח על תקלה</Link>

@@ -24,7 +24,7 @@ export default function Sidebar({ setOffCanvasOpen, offCanvasOpen }: SidebarProp
                 <div className="mt-50">
                   <div className="wionsidebar-content">
                     <p>נתי פרסום ושיווק - משרד פרסום דיגיטלי המתמחה בקידום אורגני, ממומן, בניית אתרים ומיתוג.</p>
-                    <img src="assets/Pictures/nati_magic.jpg" alt="Thumb" style={{ borderRadius: '10px' }} />
+                    <img src="assets/Pictures/nati_magic.webp" alt="Thumb" style={{ borderRadius: '10px' }} />
                   </div>
                 <div className="wionsidebar-content2">
                   <h4>כתובתנו</h4>

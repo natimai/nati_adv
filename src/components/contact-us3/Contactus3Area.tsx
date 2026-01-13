@@ -96,8 +96,8 @@ export default function Contactus3Area() {
 
                 <button className="wiondefault-btn submit-btn mt-50">שלח הודעה
                   <span className="wionbutton-icon">
-                    <img className="arry1" src="assets/images/svg/arrow-right.png" alt="" />
-                    <img className="arry2" src="assets/images/svg/arrow-right.png" alt="" />
+                    <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+                    <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
                   </span>
                 </button>
               </form>

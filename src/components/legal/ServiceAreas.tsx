@@ -7,14 +7,14 @@ import SEO from "../../common/SEO";
 import Breadcrumb from "../../common/Breadcrumb";
 
 const areas = [
-  { name: "קריית גת", desc: "משרד פרסום בקריית גת והסביבה", link: "/contact" },
-  { name: "אשקלון", desc: "קידום אתרים ושיווק באשקלון", link: "/contact" },
-  { name: "באר שבע", desc: "מיתוג ופרסום לעסקים בבאר שבע", link: "/contact" },
-  { name: "שדרות", desc: "שירותי דיגיטל לעסקים בשדרות", link: "/contact" },
-  { name: "נתיבות", desc: "בניית אתרים בנתיבות והנגב", link: "/contact" },
-  { name: "אופקים", desc: "פתרונות שיווק באופקים", link: "/contact" },
-  { name: "יבנה", desc: "פרסום ממומן ביבנה והשפלה", link: "/contact" },
-  { name: "גן יבנה", desc: "קידום עסקים בגן יבנה", link: "/contact" },
+  { name: "קריית גת", desc: "משרד פרסום בקריית גת והסביבה", link: "/service-areas/kiryat-gat" },
+  { name: "אשקלון", desc: "קידום אתרים ושיווק באשקלון", link: "/service-areas/ashkelon" },
+  { name: "באר שבע", desc: "מיתוג ופרסום לעסקים בבאר שבע", link: "/service-areas/beer-sheva" },
+  { name: "שדרות", desc: "שירותי דיגיטל לעסקים בשדרות", link: "/service-areas/sderot" },
+  { name: "נתיבות", desc: "בניית אתרים בנתיבות והנגב", link: "/service-areas/netivot" },
+  { name: "אופקים", desc: "פתרונות שיווק באופקים", link: "/service-areas/ofakim" },
+  { name: "יבנה", desc: "פרסום ממומן ביבנה והשפלה", link: "/service-areas/yavne" },
+  { name: "גן יבנה", desc: "קידום עסקים בגן יבנה", link: "/service-areas/gan-yavne" },
 ];
 
 export default function ServiceAreas() {

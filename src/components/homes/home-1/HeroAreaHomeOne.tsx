@@ -51,17 +51,17 @@ const HeroAreaHomeOne = () => {
           <div className="wionhero-thumb">
             <div className="wionhero-thumb-item item3 aos-init" data-aos="fade-up">
               <div className="hero-thumb1">
-                <img src="assets/Pictures/nati_magic.jpg" alt="נתי פרסום ושיווק - משרד פרסום בקריית גת והדרום" style={{ borderRadius: '10px' }} />
+                <img src="assets/Pictures/nati_magic.webp" alt="נתי פרסום ושיווק - משרד פרסום בקריית גת והדרום" style={{ borderRadius: '10px' }} />
               </div>
             </div>
             <div className="wionhero-thumb-item aos-init" data-aos="fade">
               <div className="hero-thumb">
-                <img src="assets/Pictures/nati_profile_no_bg.png" alt="נתי מימון - מומחה שיווק דיגיטלי בקריית גת" />
+                <img src="assets/Pictures/nati_profile_no_bg.webp" alt="נתי מימון - מומחה שיווק דיגיטלי בקריית גת" />
               </div>
             </div>
             <div className="wionhero-thumb-item item2 aos-init" data-aos="fade-up">
               <div className="hero-thumb3">
-                <img src="assets/Pictures/nati_motek.jpg" alt="בניית מותגים מנצחים בדרום" style={{ borderRadius: '10px' }} />
+                <img src="assets/Pictures/nati_motek.webp" alt="בניית מותגים מנצחים בדרום" style={{ borderRadius: '10px' }} />
               </div>
             </div>
           </div>
@@ -78,8 +78,8 @@ const HeroAreaHomeOne = () => {
                   <div className="mt-50">
                     <Link className="wiondefault-btn aos-init" data-aos-delay="500" data-aos="fade-up" to="/about">למדו עוד עלינו
                       <span className="wionbutton-icon">
-                        <img className="arry1" src="assets/images/svg/arrow-right.png" alt="" />
-                        <img className="arry2" src="assets/images/svg/arrow-right.png" alt="" />
+                        <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+                        <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
                       </span>
                     </Link>
                   </div>

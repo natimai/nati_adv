@@ -21,14 +21,14 @@ const SEO = ({ title, description, keywords }: SEOProps) => {
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="נתי פרסום ושיווק" />
       <meta property="og:locale" content="he_IL" />
-      <meta property="og:image" content="https://natiadv.co.il/assets/Pictures/nati_pro.jpg" />
+      <meta property="og:image" content="https://natiadv.co.il/assets/Pictures/nati_pro.webp" />
       <meta property="og:image:alt" content="נתי פרסום ושיווק - משרד פרסום בקריית גת" />
       
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title ? `${title} | נתי פרסום ושיווק` : defaultTitle} />
       <meta name="twitter:description" content={description || defaultDescription} />
-      <meta name="twitter:image" content="https://natiadv.co.il/assets/Pictures/nati_pro.jpg" />
+      <meta name="twitter:image" content="https://natiadv.co.il/assets/Pictures/nati_pro.webp" />
 
       {/* Geo Tags for Local SEO */}
       <meta name="geo.region" content="IL-D" />

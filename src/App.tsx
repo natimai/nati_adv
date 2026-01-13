@@ -18,6 +18,7 @@ import BlogDetails from "./components/single-blog";
 import Contactus1 from "./components/contact-us1";
 import { PrivacyPolicy, TermsOfUse, AccessibilityStatement } from "./components/legal";
 import ServiceAreas from "./components/legal/ServiceAreas";
+import CityPage from "./components/legal/CityPage";
 import NotFound from "./error";
 import SchemaMarkup from "./common/SchemaMarkup";
 

@@ -15,7 +15,7 @@ export default function TeamDetailsArea() {
             <div className="col-lg-6">
               <div className="team-sticky-top">
                 <div className="wionteam-d-thumb">
-                  <img src="assets/images/team/team9.png" alt="" />
+                  <img src="assets/images/team/team9.webp" alt="" />
                 </div>
               </div>
             </div>

@@ -17,7 +17,7 @@ export default function TeamArea() {
             <Link to="/single-team">
               <div className="wionteam-wrap aos-init" data-aos-delay="100" data-aos="fade-up">
                 <div className="wionteam-thumb">
-                  <img src="assets/images/team/team1.png" alt="Thumb" />
+                  <img src="assets/images/team/team1.webp" alt="Thumb" />
                 </div>
                 <div className="wionteam-content">
                   <h4>Ava Reynolds</h4>
@@ -30,7 +30,7 @@ export default function TeamArea() {
             <Link to="/single-team">
               <div className="wionteam-wrap aos-init" data-aos-delay="200" data-aos="fade-up">
                 <div className="wionteam-thumb">
-                  <img src="assets/images/team/team2.png" alt="Thumb" />
+                  <img src="assets/images/team/team2.webp" alt="Thumb" />
                 </div>
                 <div className="wionteam-content">
                   <h4>Leo Martinez</h4>
@@ -43,7 +43,7 @@ export default function TeamArea() {
             <Link to="/single-team">
               <div className="wionteam-wrap aos-init" data-aos-delay="300" data-aos="fade-up">
                 <div className="wionteam-thumb">
-                  <img src="assets/images/team/team3.png" alt="Thumb" />
+                  <img src="assets/images/team/team3.webp" alt="Thumb" />
                 </div>
                 <div className="wionteam-content">
                   <h4>Ethan Brooks</h4>
@@ -56,7 +56,7 @@ export default function TeamArea() {
             <Link to="/single-team">
               <div className="wionteam-wrap aos-init" data-aos-delay="400" data-aos="fade-up">
                 <div className="wionteam-thumb">
-                  <img src="assets/images/team/team4.png" alt="Thumb" />
+                  <img src="assets/images/team/team4.webp" alt="Thumb" />
                 </div>
                 <div className="wionteam-content">
                   <h4>Miles Turner</h4>
@@ -69,7 +69,7 @@ export default function TeamArea() {
             <Link to="/single-team">
               <div className="wionteam-wrap aos-init" data-aos-delay="500" data-aos="fade-up">
                 <div className="wionteam-thumb">
-                  <img src="assets/images/team/team5.png" alt="Thumb" />
+                  <img src="assets/images/team/team5.webp" alt="Thumb" />
                 </div>
                 <div className="wionteam-content">
                   <h4>Noah Kim</h4>
@@ -82,7 +82,7 @@ export default function TeamArea() {
             <Link to="/single-team">
               <div className="wionteam-wrap aos-init" data-aos-delay="600" data-aos="fade-up">
                 <div className="wionteam-thumb">
-                  <img src="assets/images/team/team6.png" alt="Thumb" />
+                  <img src="assets/images/team/team6.webp" alt="Thumb" />
                 </div>
                 <div className="wionteam-content content2">
                   <h4>Content & Copy Lead</h4>
@@ -96,7 +96,7 @@ export default function TeamArea() {
             <Link to="/single-team">
               <div className="wionteam-wrap aos-init" data-aos-delay="700" data-aos="fade-up">
                 <div className="wionteam-thumb">
-                  <img src="assets/images/team/team7.png" alt="Thumb" />
+                  <img src="assets/images/team/team7.webp" alt="Thumb" />
                 </div>
                 <div className="wionteam-content">
                   <h4>Sophie Lang</h4>
@@ -109,7 +109,7 @@ export default function TeamArea() {
             <Link to="/single-team">
               <div className="wionteam-wrap aos-init" data-aos-delay="800" data-aos="fade-up">
                 <div className="wionteam-thumb">
-                  <img src="assets/images/team/team8.png" alt="Thumb" />
+                  <img src="assets/images/team/team8.webp" alt="Thumb" />
                 </div>
                 <div className="wionteam-content">
                   <h4>Adam Smith</h4>

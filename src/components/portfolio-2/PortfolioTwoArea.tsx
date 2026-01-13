@@ -15,7 +15,7 @@ export default function PortfolioTwoArea() {
         <div className="wionp-wrap card-sticky">
           <div className="wionp-thumb">
             <Link to="/single-portfolio">
-              <img src="assets/images/portfolio/pp1.png" alt="" />
+              <img src="assets/images/portfolio/pp1.webp" alt="" />
             </Link>
           </div>
           <div className="wionp-content-wrap">
@@ -35,7 +35,7 @@ export default function PortfolioTwoArea() {
         <div className="wionp-wrap card-sticky">
           <div className="wionp-thumb">
             <Link to="/single-portfolio">
-              <img src="assets/images/portfolio/pp2.png" alt="" />
+              <img src="assets/images/portfolio/pp2.webp" alt="" />
             </Link>
           </div>
           <div className="wionp-content-wrap">
@@ -55,7 +55,7 @@ export default function PortfolioTwoArea() {
         <div className="wionp-wrap card-sticky">
           <div className="wionp-thumb">
             <Link to="/single-portfolio">
-              <img src="assets/images/portfolio/pp3.png" alt="" />
+              <img src="assets/images/portfolio/pp3.webp" alt="" />
             </Link>
           </div>
 
@@ -76,7 +76,7 @@ export default function PortfolioTwoArea() {
         <div className="wionp-wrap card-sticky">
           <div className="wionp-thumb">
             <Link to="/single-portfolio">
-              <img src="assets/images/portfolio/pp4.png" alt="" />
+              <img src="assets/images/portfolio/pp4.webp" alt="" />
             </Link>
           </div>
           <div className="wionp-content-wrap">
@@ -96,7 +96,7 @@ export default function PortfolioTwoArea() {
         <div className="wionp-wrap card-sticky">
           <div className="wionp-thumb">
             <Link to="/single-portfolio">
-              <img src="assets/images/portfolio/pp5.png" alt="" />
+              <img src="assets/images/portfolio/pp5.webp" alt="" />
             </Link>
           </div>
           <div className="wionp-content-wrap">
@@ -116,7 +116,7 @@ export default function PortfolioTwoArea() {
         <div className="wionp-wrap card-sticky">
           <div className="wionp-thumb">
             <Link to="/single-portfolio">
-              <img src="assets/images/portfolio/pp6.png" alt="" />
+              <img src="assets/images/portfolio/pp6.webp" alt="" />
             </Link>
           </div>
           <div className="wionp-content-wrap">
@@ -137,8 +137,8 @@ export default function PortfolioTwoArea() {
         <div className="wionp-btn aos-init" data-aos-delay="700" data-aos="fade-up">
           <Link className="wiondefault-btn" to="/portfolio-1">View full projects
             <span className="wionbutton-icon">
-              <img className="arry1" src="assets/images/svg/arrow-right.png" alt="" />
-              <img className="arry2" src="assets/images/svg/arrow-right.png" alt="" />
+              <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+              <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
             </span>
           </Link>
         </div>

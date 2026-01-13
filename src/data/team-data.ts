@@ -1,14 +1,14 @@
  
 
-import team_img_1 from "../../public/assets/images/team/team1.png";
-import nati_img from "../../public/assets/Pictures/nati_pro.jpg";
-import team_img_2 from "../../public/assets/images/team/team2.png";
-import team_img_3 from "../../public/assets/images/team/team3.png";
-import team_img_4 from "../../public/assets/images/team/team4.png";
+import team_img_1 from "../../public/assets/images/team/team1.webp";
+import nati_img from "../../public/assets/Pictures/nati_pro.webp";
+import team_img_2 from "../../public/assets/images/team/team2.webp";
+import team_img_3 from "../../public/assets/images/team/team3.webp";
+import team_img_4 from "../../public/assets/images/team/team4.webp";
 // home 3 
-import team_img_5 from "../../public/assets/images/team/team5.png";
-import team_img_6 from "../../public/assets/images/team/team6.png";
-import team_img_8 from "../../public/assets/images/team/team8.png";
+import team_img_5 from "../../public/assets/images/team/team5.webp";
+import team_img_6 from "../../public/assets/images/team/team6.webp";
+import team_img_8 from "../../public/assets/images/team/team8.webp";
 
 
 
