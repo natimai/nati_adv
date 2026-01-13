@@ -43,8 +43,7 @@ const router = createBrowserRouter([
   { path: "/terms-of-use", element: <TermsOfUse /> },
   { path: "/accessibility-statement", element: <AccessibilityStatement /> },
   { path: "/service-areas", element: <ServiceAreas /> },
-
-
+  { path: "/service-areas/:city", element: <CityPage /> },
   { path: "*", element: <NotFound /> },
 ]);
 
