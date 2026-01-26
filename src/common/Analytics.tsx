@@ -7,7 +7,7 @@ declare global {
   }
 }
 
-const TRACKING_ID = ""; // הכנס כאן את ה-Measurement ID שלך (למשל: G-XXXXXXXXXX)
+const TRACKING_ID = import.meta.env.VITE_GA_TRACKING_ID || ""; // קח מ-environment variables
 
 const Analytics = () => {
   const location = useLocation();

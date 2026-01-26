@@ -1,5 +1,31 @@
+# robots.txt for natiadv.co.il
+# נתי פרסום ושיווק - משרד פרסום דיגיטלי בקריית גת
+
 User-agent: *
 Allow: /
 
-Sitemap: https://natiadv.co.il/sitemap.xml
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
 
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Allow CSS, JS and images for better indexing
+Allow: /assets/
+Allow: /*.js
+Allow: /*.css
+Allow: /*.webp
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.svg
+
+# Disallow admin or API endpoints (if added in the future)
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://natiadv.co.il/sitemap.xml

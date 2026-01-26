@@ -23,15 +23,32 @@ const ContactForm = () => {
     e.preventDefault();
     setStatus('submitting');
 
-    // Simulate API call
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      setStatus('success');
-      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-      
-      // Reset status after 3 seconds
-      setTimeout(() => setStatus('idle'), 3000);
-    }, 1500);
+    // Build WhatsApp message from form data
+    const whatsappMessage = `
+שלום, אני ${formData.name}
+
+📱 טלפון: ${formData.phone}
+📧 אימייל: ${formData.email}
+${formData.subject ? `📋 נושא: ${formData.subject}\n` : ''}
+💬 הודעה:
+${formData.message}
+    `.trim();
+
+    // WhatsApp phone number (from environment or fallback)
+    const phoneNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '972544445567';
+
+    // Create WhatsApp URL with encoded message
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    // Open WhatsApp in new window
+    window.open(whatsappURL, '_blank');
+
+    // Show success message and reset form
+    setStatus('success');
+    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
+
+    // Reset status after 3 seconds
+    setTimeout(() => setStatus('idle'), 3000);
   };
 
   return (
@@ -124,7 +141,7 @@ const ContactForm = () => {
 
         {status === 'success' && (
           <div className="alert alert-success mt-4" role="alert">
-            ההודעה נשלחה בהצלחה! נחזור אליכם בהקדם.
+            מעולה! וואטסאפ נפתח עם ההודעה שלכם. שלחו אותה ונחזור אליכם בהקדם!
           </div>
         )}
       </form>

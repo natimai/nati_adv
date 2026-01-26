@@ -1,7 +1,28 @@
 
 import { useParams } from 'react-router-dom';
 
-const serviceData: any = {
+interface FAQ {
+  q: string;
+  a: string;
+}
+
+interface ServiceData {
+  title: string;
+  subtitle: string;
+  overview: string;
+  offer: string[];
+  whyNeed: string[];
+  process: string[];
+  faq: FAQ[];
+  image1: string;
+  image2: string;
+}
+
+interface AllServicesData {
+  [key: string]: ServiceData;
+}
+
+const serviceData: AllServicesData = {
   seo: {
     title: "קידום אורגני (SEO)",
     subtitle: "להיות ראשון בגוגל, באופן טבעי",
@@ -197,8 +218,8 @@ export default function ServiceDetailsArea() {
                 <div className="wionservice-single-data">
                   <h3 className="mb-30">מה כולל השירות?</h3>
                   <ul className="check-list-2">
-                    {service.offer.map((item: string, index: number) => (
-                      <li key={index} style={{marginBottom: '15px', display: 'flex', alignItems: 'center'}}>
+                    {service.offer.map((item: string) => (
+                      <li key={item} style={{marginBottom: '15px', display: 'flex', alignItems: 'center'}}>
                         <i className="ri-check-double-line text-primary ms-2" style={{fontSize: '20px'}}></i>
                         <span style={{fontSize: '18px', fontWeight: '500'}}>{item}</span>
                       </li>
@@ -213,7 +234,7 @@ export default function ServiceDetailsArea() {
                   <h3 className="mb-30">איך זה עובד? (תהליך העבודה)</h3>
                   <div className="process-steps">
                     {service.process.map((step: string, index: number) => (
-                      <div key={index} className="process-step mb-3 p-3 border rounded-3 d-flex align-items-center bg-white shadow-sm">
+                      <div key={`${step}-${index}`} className="process-step mb-3 p-3 border rounded-3 d-flex align-items-center bg-white shadow-sm">
                         <span className="step-number bg-primary text-white rounded-circle d-flex justify-content-center align-items-center ms-3" style={{width: '40px', height: '40px', minWidth: '40px', fontWeight: 'bold'}}>{index + 1}</span>
                         <span style={{fontSize: '18px'}}>{step.replace(/^שלב \d+: /, '')}</span>
                       </div>
@@ -226,20 +247,23 @@ export default function ServiceDetailsArea() {
               <div className="wionservice-single-wrap mb-50">
                 <h3 className="mb-30">שאלות נפוצות</h3>
                 <div className="accordion" id="serviceFaq">
-                  {service.faq.map((item: any, index: number) => (
-                    <div className="accordion-item mb-3 border rounded overflow-hidden" key={index}>
-                      <h2 className="accordion-header">
-                        <button className="accordion-button collapsed bg-light text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target={`#faq${index}`}>
-                          {item.q}
-                        </button>
-                      </h2>
-                      <div id={`faq${index}`} className="accordion-collapse collapse" data-bs-parent="#serviceFaq">
-                        <div className="accordion-body bg-white">
-                          {item.a}
+                  {service.faq.map((item: FAQ, index: number) => {
+                    const faqId = `faq-${item.q.substring(0, 20).replace(/\s/g, '-')}-${index}`;
+                    return (
+                      <div className="accordion-item mb-3 border rounded overflow-hidden" key={faqId}>
+                        <h2 className="accordion-header">
+                          <button className="accordion-button collapsed bg-light text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target={`#${faqId}`}>
+                            {item.q}
+                          </button>
+                        </h2>
+                        <div id={faqId} className="accordion-collapse collapse" data-bs-parent="#serviceFaq">
+                          <div className="accordion-body bg-white">
+                            {item.a}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
 
@@ -257,8 +281,8 @@ export default function ServiceDetailsArea() {
                   <div className="wionservice-single-data">
                     <h3 className="text-white mb-30">למה דווקא עכשיו?</h3>
                     <ul className="list-unstyled">
-                      {service.whyNeed.map((item: string, index: number) => (
-                        <li key={index} className="mb-3 d-flex text-white-50">
+                      {service.whyNeed.map((item: string) => (
+                        <li key={item} className="mb-3 d-flex text-white-50">
                           <i className="ri-arrow-left-s-line text-white ms-2"></i>
                           {item}
                         </li>

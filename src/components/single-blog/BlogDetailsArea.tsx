@@ -1,5 +1,5 @@
-
 import { useParams, Link } from 'react-router-dom';
+import DOMPurify from 'dompurify';
 import blog_data from '../../data/blog-data';
 import SEO from '../../common/SEO';
 
@@ -41,8 +41,11 @@ export default function BlogDetailsArea() {
                 </ul>
               </div>
               
-              {/* Dynamic Content Rendering */}
-              <div className="wionblog-single-data mt-30" dangerouslySetInnerHTML={{ __html: item.content || '' }}></div>
+              {/* Dynamic Content Rendering - Sanitized with DOMPurify for XSS protection */}
+              <div
+                className="wionblog-single-data mt-30"
+                dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.content || '') }}
+              ></div>
 
               <div className="wionblog-d-content-wrap">
                 <div className="wionblog-widgets widgets2">

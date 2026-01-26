@@ -16,37 +16,37 @@ interface Testimonial {
   text: string;
   name: string;
   role: string;
-  img: any;
+  img: string;
 }
 
 // ✅ Testimonial Data
 const testimonial_data: Testimonial[] = [
   {
     id: 1,
-    text: "Working with this agency was a dream. They understood my vision immediately and transformed it into a calm, elegant brand that speaks directly to my audience. The branding and UI design elevated the whole product. I’ve received countless compliments since launch.",
-    name: "Sarah Lin",
-    role: "Founder, Zenvue (Meditation App)",
+    text: "העבודה עם נתי ופרסום ושיווק הייתה חוויה מדהימה. הם הבינו את החזון שלי מיד והפכו אותו למותג אלגנטי ומרגיע שמדבר ישירות אל הקהל שלי. העיצוב והמיתוג העלו את המוצר לרמה חדשה לגמרי.",
+    name: "שרה לוי",
+    role: "מייסדת, אפליקציית מדיטציה",
     img: testimonial_img_1,
   },
   {
     id: 2,
-    text: "Their team delivered a refined visual identity and pitch  I was impressed by how they balanced professionalism with personality in our brand. deck design that wowed investors. They understood the financial space but made it human.",
-    name: "Daniel Choi",
-    role: "Director, Orrin Finance (Fintech)",
+    text: "הצוות סיפק זהות ויזואלית מעודנת ומצגת שהרשימה משקיעים. התרשמתי מהאיזון בין מקצועיות לאישיות במותג שלנו. הם הבינו את התחום הפיננסי אבל הפכו אותו לאנושי.",
+    name: "דניאל כהן",
+    role: "מנכ\"ל, חברת פינטק",
     img: testimonial_img_3,
   },
   {
     id: 3,
-    text: "I was blown away by the aesthetic and flow of the website they created for me. They captured the essence of my brand with sophistication and warmth. Clients now say they chose me because of how professional and inviting my website looks!",
-    name: "Amira Nasri",
-    role: "Owner, Lunara Studio (Interior Design)",
+    text: "הוקסמתי מהאסתטיקה והזרימה של האתר שהם יצרו עבורי. הם תפסו את המהות של המותג שלי עם תחכום וחמימות. לקוחות עכשיו אומרים שהם בחרו בי בגלל כמה מקצועי ומזמין האתר נראה!",
+    name: "מירב אברהם",
+    role: "בעלים, סטודיו לעיצוב פנים",
     img: testimonial_img_2,
   },
   {
     id: 4,
-    text: "What impressed me most was their ability to combine creativity with strategy. They delivered a powerful brand identity and UX design that not only looked great but also boosted engagement. Reliable, smart, and seriously talented.",
-    name: "James Porter",
-    role: "CEO, Voltive Tech (SaaS Startup)",
+    text: "מה שהרשים אותי הכי הרבה הייתה היכולת שלהם לשלב יצירתיות עם אסטרטגיה. הם סיפקו זהות מותג חזקה ועיצוב UX שלא רק נראה נהדר אלא גם הגביר את המעורבות. אמינים, חכמים ומוכשרים ברמה גבוהה.",
+    name: "יוסי ברק",
+    role: "מנכ\"ל, סטארטאפ SaaS",
     img: testimonial_img_4,
   },
 ];
@@ -80,10 +80,10 @@ export default function TestimonialHomeOne() {
             data-aos-delay="400"
             data-aos="fade-up"
           >
-            <p>What people say</p>
+            <p>מה אומרים עלינו</p>
           </div>
           <h2 className="aos-init" data-aos-delay="500" data-aos="fade-up">
-            Testimonials
+            המלצות לקוחות
           </h2>
         </div>
  

@@ -1,7 +1,56 @@
-
- 
+import { useState } from 'react';
 
 export default function Contactus3Area() {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    subject: '',
+    message: ''
+  });
+
+  const [status, setStatus] = useState<'idle' | 'success'>('idle');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.name]: e.target.value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    // Build WhatsApp message from form data
+    const fullName = `${formData.firstName} ${formData.lastName}`.trim();
+    const whatsappMessage = `
+שלום, אני ${fullName || 'לקוח מעוניין'}
+
+📱 טלפון: ${formData.phone}
+📧 אימייל: ${formData.email}
+${formData.subject ? `📋 נושא: ${formData.subject}\n` : ''}
+💬 הודעה:
+${formData.message}
+    `.trim();
+
+    // WhatsApp phone number (from environment or fallback)
+    const phoneNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '972544445567';
+
+    // Create WhatsApp URL with encoded message
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    // Open WhatsApp in new window
+    window.open(whatsappURL, '_blank');
+
+    // Show success message and reset form
+    setStatus('success');
+    setFormData({ firstName: '', lastName: '', email: '', phone: '', subject: '', message: '' });
+
+    // Reset status after 3 seconds
+    setTimeout(() => setStatus('idle'), 3000);
+  };
+
   return (
     <section className="wionabout-section1 wiondefault-bg mb-00">
       <div className="container">
@@ -51,18 +100,32 @@ export default function Contactus3Area() {
               <div className="wioncontact-title">
                 <h4>יש לכם פרויקט בראש? מלאו את הטופס למטה:</h4>
               </div>
-              <form action="#">
+              <form onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="col-lg-6 ">
                     <div className="wionmain-field">
                       <h6>שם</h6>
-                      <input type="text" placeholder="שם פרטי" />
+                      <input
+                        type="text"
+                        name="firstName"
+                        value={formData.firstName}
+                        onChange={handleChange}
+                        placeholder="שם פרטי"
+                        required
+                      />
                     </div>
                   </div>
                   <div className="col-lg-6 ">
                     <div className="wionmain-field">
                       <div className="mt-34">
-                        <input type="text" placeholder="שם משפחה" />
+                        <input
+                          type="text"
+                          name="lastName"
+                          value={formData.lastName}
+                          onChange={handleChange}
+                          placeholder="שם משפחה"
+                          required
+                        />
                       </div>
                     </div>
                   </div>
@@ -71,13 +134,27 @@ export default function Contactus3Area() {
                   <div className="col-lg-6">
                     <div className="wionmain-field">
                       <h6>אימייל</h6>
-                      <input type="email" placeholder="האימייל שלך" />
+                      <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        placeholder="האימייל שלך"
+                        required
+                      />
                     </div>
                   </div>
                   <div className="col-lg-6">
                     <div className="wionmain-field">
                       <h6>טלפון</h6>
-                      <input type="text" placeholder="מספר טלפון" />
+                      <input
+                        type="tel"
+                        name="phone"
+                        value={formData.phone}
+                        onChange={handleChange}
+                        placeholder="מספר טלפון"
+                        required
+                      />
                     </div>
                   </div>
                 </div>
@@ -85,13 +162,26 @@ export default function Contactus3Area() {
                   <div className="col-lg-12">
                     <div className="wionmain-field">
                       <h6>נושא</h6>
-                      <input type="email" placeholder="נושא הפנייה" />
+                      <input
+                        type="text"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        placeholder="נושא הפנייה"
+                      />
                     </div>
                   </div>
                 </div>
                 <div className="wionmain-field-textarea">
                   <h6>הודעה</h6>
-                  <textarea className="button-text" name="textarea" placeholder="ספרו לנו על הפרויקט שלכם"></textarea>
+                  <textarea
+                    className="button-text"
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    placeholder="ספרו לנו על הפרויקט שלכם"
+                    required
+                  ></textarea>
                 </div>
 
                 <button className="wiondefault-btn submit-btn mt-50">שלח הודעה
@@ -100,6 +190,12 @@ export default function Contactus3Area() {
                     <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
                   </span>
                 </button>
+
+                {status === 'success' && (
+                  <div className="alert alert-success mt-4" role="alert">
+                    מעולה! וואטסאפ נפתח עם ההודעה שלכם. שלחו אותה ונחזור אליכם בהקדם!
+                  </div>
+                )}
               </form>
             </div>
           </div>

@@ -30,49 +30,49 @@ const testimonials: Testimonial[] = [
     id: "tab-1",
     brandImg: brand1,
     thumb: thumb1,
-    name: "Sarah Lin",
-    role: "Founder, AZ X (Meditation App)",
-    text: "Working with this agency was a dream. They understood my vision immediately and transformed it into a calm, elegant brand that speaks directly to my audience. The branding and UI design elevated the whole product. I’ve received countless compliments since launch.",
+    name: "שרה לוי",
+    role: "מייסדת, אפליקציית מדיטציה",
+    text: "העבודה עם נתי פרסום ושיווק הייתה חוויה מדהימה. הם הבינו את החזון שלי מיד והפכו אותו למותג אלגנטי ומרגיע שמדבר ישירות אל הקהל שלי. העיצוב והמיתוג העלו את המוצר לרמה חדשה לגמרי.",
   },
   {
     id: "tab-2",
     brandImg: brand2,
     thumb: thumb2,
-    name: "Amira Nasri",
-    role: "Owner, LOGO Studio (Interior Design)",
-    text: "I was blown away by the aesthetic & flow of the website they created for me. They captured the essence of my brand with sophistication & warmth. Clients now say they chose me because of how professional & inviting my website looks!",
+    name: "מירב אברהם",
+    role: "בעלים, סטודיו לעיצוב פנים",
+    text: "הוקסמתי מהאסתטיקה והזרימה של האתר שהם יצרו עבורי. הם תפסו את המהות של המותג שלי עם תחכום וחמימות. לקוחות עכשיו אומרים שהם בחרו בי בגלל כמה מקצועי ומזמין האתר נראה!",
   },
   {
     id: "tab-3",
     brandImg: brand3,
     thumb: thumb3,
-    name: "Daniel Choi",
-    role: "Director, Hausy Finance (Fintech)",
-    text: "Their team delivered a refined visual identity and pitch deck design I was impressed by how they balanced professionalism with personality in our brand.  that wowed investors. They understood the financial space but made it human.",
+    name: "דניאל כהן",
+    role: "מנכ\"ל, חברת פינטק",
+    text: "הצוות סיפק זהות ויזואלית מעודנת ומצגת שהרשימה משקיעים. התרשמתי מהאיזון בין מקצועיות לאישיות במותג שלנו. הם הבינו את התחום הפיננסי אבל הפכו אותו לאנושי.",
   },
   {
     id: "tab-4",
     brandImg: brand4,
     thumb: thumb4,
-    name: "James Porter",
-    role: "CEO, Tech care (SaaS Startup)",
-    text: "What impressed me most was their ability to combine creativity with strategy. They delivered a powerful brand identity and UX design that not only looked great but also boosted engagement. Reliable, smart, and seriously talented.",
+    name: "יוסי ברק",
+    role: "מנכ\"ל, סטארטאפ SaaS",
+    text: "מה שהרשים אותי הכי הרבה הייתה היכולת שלהם לשלב יצירתיות עם אסטרטגיה. הם סיפקו זהות מותג חזקה ועיצוב UX שלא רק נראה נהדר אלא גם הגביר את המעורבות. אמינים, חכמים ומוכשרים ברמה גבוהה.",
   },
   {
     id: "tab-5",
     brandImg: brand5,
     thumb: thumb5,
-    name: "Layla Rivera",
-    role: "Co-founder, Froqlo (Fashion Brand)",
-    text: "The team brought our Gen Z–focused fashion label to life with vibrant visuals, bold branding, and a seamless web experience. They ‘got’ our audience like no one else. Super responsive and fun to work with, too!",
+    name: "רונית שפירא",
+    role: "שותפה-מייסדת, מותג אופנה",
+    text: "הצוות הביא את מותג האופנה שלנו לחיים עם ויזואליה מרהיבה, מיתוג נועז וחוויית אתר חלקה. הם 'תפסו' את הקהל שלנו כמו אף אחד אחר. סופר רספונסיביים ומהנים לעבוד איתם!",
   },
   {
     id: "tab-6",
     brandImg: brand6,
     thumb: thumb6,
-    name: "Michael Tran",
-    role: "Product Manager, Auralink (Music App)",
-    text: "Their design process was both inspiring and strategic. They helped us build a sleek, intuitive interface for our app, and their branding work gave us a professional edge in a crowded market. Highly recommended for startups.",
+    name: "מיכאל תמיר",
+    role: "מנהל מוצר, אפליקציית מוזיקה",
+    text: "תהליך העיצוב שלהם היה גם מעורר השראה וגם אסטרטגי. הם עזרו לנו לבנות ממשק אלגנטי ואינטואיטיבי לאפליקציה שלנו, והעבודה על המיתוג נתנה לנו יתרון מקצועי בשוק צפוף. מומלץ בחום לסטארטאפים.",
   },
 ];
 
@@ -85,9 +85,9 @@ export default function TestimonialHomeThree() {
         <div className="container">
           <div className="wionsection-title center">
             <div className="wionsub-title">
-              <p>What people say</p>
+              <p>מה אומרים עלינו</p>
             </div>
-            <h2>Testimonials</h2>
+            <h2>המלצות לקוחות</h2>
           </div>
  
           <div className="wiontab-wrap">
