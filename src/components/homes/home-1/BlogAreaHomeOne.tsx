@@ -16,9 +16,9 @@ const BlogAreaHomeOne = () => {
                   data-aos="fade-up"
                   data-aos-delay="400"
                 >
-                  <p>הישארו מעודכנים</p>
+                  <p>ידע שמשתלם</p>
                 </div>
-                <h2 data-aos="fade-up" data-aos-delay="500">המאמרים שלנו</h2>
+                <h2 data-aos="fade-up" data-aos-delay="500">קראו. למדו. יישמו.</h2>
               </div>
               <div className="col-xl-5 col-lg-4 d-flex align-items-end justify-content-end">
                 <div className="wiontitle-btn">

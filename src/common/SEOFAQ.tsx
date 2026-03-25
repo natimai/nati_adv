@@ -24,7 +24,7 @@ export const seoFaqData = [
 
 export default function SEOFAQ() {
   return (
-    <section className="hidden-seo-faq" style={{ display: 'none' }}>
+    <section className="hidden-seo-faq" style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', border: '0' }}>
       <h2>שאלות ותשובות נפוצות על שיווק דיגיטלי בקריית גת</h2>
       <ul>
         {seoFaqData.map((item, index) => (

@@ -58,7 +58,7 @@ const FooterOne = () => {
           <Slider {...setting1} className="wioncta-slider-init">
             {[...Array(8)].map((_, i) => (
               <div key={i} className="wioncta-slider-content">
-                <h2>בואו ניצור משהו מדהים יחד</h2>
+                <h2>מוכנים להזניק את העסק שלכם?</h2>
                 <div className="wioncta-victor-icon">
                   <img src="assets/images/cta/icon1.svg" alt="Icon" />
                 </div>
@@ -70,7 +70,7 @@ const FooterOne = () => {
           <Slider {...setting2} className="wioncta-slider-init">
             {[...Array(8)].map((_, i) => (
               <div key={i} className="wioncta-slider-content">
-                <h2>בואו ניצור משהו מדהים יחד</h2>
+                <h2>מוכנים להזניק את העסק שלכם?</h2>
                 <div className="wioncta-victor-icon">
                   <img src="assets/images/cta/icon1.svg" alt="Icon" />
                 </div>
@@ -79,7 +79,7 @@ const FooterOne = () => {
           </Slider>
         </div>
         <div className="wioncta-btn mt-80">
-          <Link className="wiondefault-btn white-outline aos-init" data-aos-delay="500" data-aos="fade-up" to="/contact">קבעו פגישה
+          <Link className="wiondefault-btn white-outline aos-init" data-aos-delay="500" data-aos="fade-up" to="/contact">קבעו שיחת ייעוץ חינם
             <span className="wionbutton-icon">
               <img className="arry1" src="assets/images/svg/arrow-white.svg" alt="" />
               <img className="arry2" src="assets/images/svg/arrow-white.svg" alt="" />

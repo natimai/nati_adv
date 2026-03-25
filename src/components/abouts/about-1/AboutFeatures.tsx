@@ -7,9 +7,9 @@ export default function AboutFeatures() {
       <div className="container">
         <div className="wionsection-title center">
           <div className="wionsub-title aos-init" data-aos-delay="200" data-aos="fade-up">
-            <p>From Concept to Culture</p>
+            <p>מה מנחה אותנו</p>
           </div>
-          <h2 className="aos-init" data-aos-delay="500" data-aos="fade-up">Core values</h2>
+          <h2 className="aos-init" data-aos-delay="500" data-aos="fade-up">הערכים שלנו</h2>
         </div>
         <div className="row">
           <div className="col-xl-4 col-lg-6 col-md-6">
@@ -18,8 +18,8 @@ export default function AboutFeatures() {
                 <img src="assets/images/svg/icon1.svg" alt="" />
               </div>
               <div className="wioniconbox-content">
-                <h3>Creative exclence</h3>
-                <p>Every design is crafted with intention, aiming for both visual impact.</p>
+                <h3>מצוינות יצירתית</h3>
+                <p>כל עיצוב נבנה עם כוונה — לא רק שייראה טוב, אלא שיעבוד.</p>
               </div>
             </div>
           </div>
@@ -29,8 +29,8 @@ export default function AboutFeatures() {
                 <img src="assets/images/svg/icon2.svg" alt="" />
               </div>
               <div className="wioniconbox-content">
-                <h3>Strategic thinking</h3>
-                <p>Every pixel, word & idea serves a goal. We balance creativity with clarity.</p>
+                <h3>חשיבה אסטרטגית</h3>
+                <p>כל מילה, פיקסל ורעיון משרתים מטרה. יצירתיות בלי כיוון היא רק עלות.</p>
               </div>
             </div>
           </div>
@@ -40,8 +40,8 @@ export default function AboutFeatures() {
                 <img src="assets/images/svg/icon3.svg" alt="" />
               </div>
               <div className="wioniconbox-content">
-                <h3>Client partnership</h3>
-                <p>We believe the best results come from honest collaboration & shared vision.</p>
+                <h3>שותפות אמיתית</h3>
+                <p>התוצאות הטובות ביותר מגיעות משיתוף פעולה כנה. אנחנו לא קבלן — אנחנו שותפים.</p>
               </div>
             </div>
           </div>
@@ -51,8 +51,8 @@ export default function AboutFeatures() {
                 <img src="assets/images/svg/icon4.svg" alt="" />
               </div>
               <div className="wioniconbox-content">
-                <h3>Cursity & leaing</h3>
-                <p>We stay curious, embrace change, and never stop learning.</p>
+                <h3>סקרנות ולמידה מתמדת</h3>
+                <p>השיווק הדיגיטלי משתנה כל הזמן. מי שלא לומד — נשאר מאחור.</p>
               </div>
             </div>
           </div>
@@ -62,8 +62,8 @@ export default function AboutFeatures() {
                 <img src="assets/images/svg/icon5.svg" alt="" />
               </div>
               <div className="wioniconbox-content">
-                <h3>Transparency</h3>
-                <p>We believe in open communication, and delivering what we promise.</p>
+                <h3>שקיפות מלאה</h3>
+                <p>אין חשבונות נסתרים, אין הפתעות בסוף החודש. מה שמוסכם — מה שנעשה.</p>
               </div>
             </div>
           </div>
@@ -73,8 +73,8 @@ export default function AboutFeatures() {
                 <img src="assets/images/svg/icon6.svg" alt="" />
               </div>
               <div className="wioniconbox-content">
-                <h3>Empathy</h3>
-                <p>Good design solves problems. Great design connects with people. </p>
+                <h3>אמפתיה</h3>
+                <p>עיצוב טוב פותר בעיות. עיצוב מעולה יוצר חיבור. אנחנו מכוונים לשני.</p>
               </div>
             </div>
           </div>

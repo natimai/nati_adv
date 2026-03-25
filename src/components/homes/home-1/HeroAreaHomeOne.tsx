@@ -12,18 +12,18 @@ interface CounterItem {
 
 const counter_data: CounterItem[] = [
   {
-    value: 12,
+    value: 5,
     suffix: "+",
     label: "שנות ניסיון",
   },
   {
-    value: 84,
-    suffix: "k",
-    label: "לקוחות מרוצים",
+    value: 50,
+    suffix: "+",
+    label: "לקוחות פעילים",
   },
   {
-    value: 60,
-    suffix: "k+",
+    value: 120,
+    suffix: "+",
     label: "פרויקטים שהושלמו",
   },
   {
@@ -45,8 +45,23 @@ const HeroAreaHomeOne = () => {
             <div className="wionsub-title aos-init" data-aos-delay="400" data-aos="fade-up">
               <p>משרד פרסום בקריית גת והדרום</p>
             </div>
-            <h1 className="aos-init" data-aos-delay="500" data-aos="fade-up">משרד פרסום שבונה מותגים מנצחים</h1>
-            <h2 className="aos-init h1-style" data-aos-delay="600" data-aos="fade-up" style={{ fontSize: 'inherit', fontWeight: 'inherit', color: 'inherit' }}>אנחנו בונים הצלחה דיגיטלית</h2>
+            <h1 className="aos-init" data-aos-delay="500" data-aos="fade-up">שיווק שמוכר. לא שיווק שנראה טוב.</h1>
+            <h2 className="aos-init h1-style" data-aos-delay="600" data-aos="fade-up" style={{ fontSize: 'inherit', fontWeight: 'inherit', color: 'inherit' }}>תוצאות אמיתיות לעסקים בקריית גת והדרום</h2>
+            <div className="wionhero-btn aos-init" data-aos-delay="700" data-aos="fade-up" style={{ marginTop: '40px', display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+              <Link className="wiondefault-btn" to="/contact">קבעו שיחת ייעוץ חינם
+                <span className="wionbutton-icon">
+                  <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+                  <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
+                </span>
+              </Link>
+              <a href="https://wa.me/972544445567" target="_blank" rel="noopener noreferrer" className="wiondefault-btn" style={{ background: 'transparent', border: '2px solid currentColor' }}>
+                וואטסאפ מהיר
+                <span className="wionbutton-icon">
+                  <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
+                  <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />
+                </span>
+              </a>
+            </div>
           </div>
           <div className="wionhero-thumb">
             <div className="wionhero-thumb-item item3 aos-init" data-aos="fade-up">
@@ -74,9 +89,9 @@ const HeroAreaHomeOne = () => {
               </div>
               <div className="col-xl-7 col-lg-8">
                 <div className="wionabout-content-data pl-30">
-                  <h3>נתי פרסום ושיווק הוא משרד פרסום בקריית גת המתמחה בפתרונות שיווק יצירתיים. אנו הופכים את החזון שלך למציאות דיגיטלית בועטת, בין אם מדובר במותג חדש או בצמיחה של עסק קיים.</h3>
+                  <h3>רוב משרדי הפרסום ימכרו לך חבילה. אנחנו נבנה לך אסטרטגיה. ההבדל? תרגיש אותו בקופה.</h3>
                   <div className="mt-50">
-                    <Link className="wiondefault-btn aos-init" data-aos-delay="500" data-aos="fade-up" to="/about">למדו עוד עלינו
+                    <Link className="wiondefault-btn aos-init" data-aos-delay="500" data-aos="fade-up" to="/about">ראו איך עובדים איתנו
                       <span className="wionbutton-icon">
                         <img className="arry1" src="assets/images/svg/arrow-right.webp" alt="" />
                         <img className="arry2" src="assets/images/svg/arrow-right.webp" alt="" />

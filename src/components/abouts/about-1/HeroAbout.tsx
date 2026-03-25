@@ -24,7 +24,7 @@ export default function HeroAbout() {
             data-aos-delay="500"
             data-aos="fade-up"
           >
-            נעים להכיר
+            האדם שעומד מאחורי המותגים
           </h1>
         </div>
 

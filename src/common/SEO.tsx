@@ -23,7 +23,11 @@ const SEO = ({ title, description, keywords }: SEOProps) => {
       <meta property="og:locale" content="he_IL" />
       <meta property="og:image" content="https://natiadv.co.il/assets/Pictures/nati_pro.webp" />
       <meta property="og:image:alt" content="נתי פרסום ושיווק - משרד פרסום בקריית גת" />
-      
+      <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : 'https://natiadv.co.il'} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : 'https://natiadv.co.il'} />
+
       {/* Twitter Card Tags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title ? `${title} | נתי פרסום ושיווק` : defaultTitle} />

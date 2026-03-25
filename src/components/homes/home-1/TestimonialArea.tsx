@@ -35,9 +35,9 @@ const TestimonialArea = () => {
         <div className="container">
           <div className="wionsection-title">
             <div className="wionsub-title aos-init" data-aos-delay="400" data-aos="fade-up">
-              <p>מה אנשים אומרים עלינו</p>
+              <p>עסקים שעברו את זה לפניך</p>
             </div>
-            <h2 className="aos-init" data-aos-delay="500" data-aos="fade-up">המלצות</h2>
+            <h2 className="aos-init" data-aos-delay="500" data-aos="fade-up">הם עבדו איתנו. הם ממשיכים.</h2>
           </div>
         </div>
         <div className="slick-wrapper">

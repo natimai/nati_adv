@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import DOMPurify from 'dompurify';
 import blog_data from '../../data/blog-data';
 import SEO from '../../common/SEO';
@@ -19,6 +20,43 @@ export default function BlogDetailsArea() {
   return (
     <section className="wionabout-section1 wiondefault-bg">
       <SEO title={item.title} description={item.shortDesc || item.title} />
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": item.title,
+            "description": item.shortDesc || item.title,
+            "image": `https://natiadv.co.il${typeof item.img === 'string' ? item.img : ''}`,
+            "datePublished": item.date,
+            "dateModified": item.date,
+            "author": {
+              "@type": "Person",
+              "name": "נתי מימון",
+              "url": "https://natiadv.co.il/about",
+              "jobTitle": "מנהל שיווק דיגיטלי",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "נתי פרסום ושיווק"
+              }
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "נתי פרסום ושיווק",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://natiadv.co.il/assets/Pictures/nati_logo.svg"
+              }
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": `https://natiadv.co.il/blog/${item.id}`
+            },
+            "articleSection": item.category,
+            "inLanguage": "he"
+          })}
+        </script>
+      </Helmet>
       <div className="container">
         <div className="wionsection-title center max-w100">
           <div className="wionsub-title title3 aos-init" data-aos-delay="400" data-aos="fade-up">
@@ -39,6 +77,10 @@ export default function BlogDetailsArea() {
                   </li>
                   <li>{item.readTime}</li>
                 </ul>
+              </div>
+              <div className="wionblog-author" style={{ display: 'flex', alignItems: 'center', gap: '10px', margin: '16px 0', padding: '12px 16px', background: '#f9f9f9', borderRadius: '8px' }}>
+                <strong>נכתב על ידי:</strong>
+                <span>נתי מימון — מנהל שיווק דיגיטלי | <a href="/about" style={{ textDecoration: 'underline' }}>נתי פרסום ושיווק</a></span>
               </div>
               
               {/* Dynamic Content Rendering - Sanitized with DOMPurify for XSS protection */}

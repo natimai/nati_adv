@@ -17,7 +17,7 @@ const counter_data: CounterItem[] = [
   {
     value: 50,
     suffix: "+",
-    label: "לקוחות מרוצים (ועוד סופרים...)",
+    label: "לקוחות פעילים",
   },
   {
     value: 300,
@@ -27,7 +27,7 @@ const counter_data: CounterItem[] = [
   {
     value: 100,
     suffix: "%",
-    label: "שקיפות ואמינות (בלי חרטות)",
+    label: "שקיפות — בלי חשבונות נסתרים",
   },
 ];
 

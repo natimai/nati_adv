@@ -64,7 +64,7 @@ export default function AboutFaq() {
                 data-aos-delay="500"
                 data-aos="fade-up"
               >
-                בואו נענה על השאלות האמיתיות
+                תשובות ישרות לשאלות ישרות
               </h2>
             </div>
           </div>

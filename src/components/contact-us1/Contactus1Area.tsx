@@ -7,11 +7,14 @@ export default function Contactus1Area() {
       <div className="container">
         <div className="wionsection-title center">
           <div className="wionsub-title aos-init" data-aos-delay="400" data-aos="fade-up">
-            <p>דברו איתנו, אנחנו כאן בשבילכם</p>
+            <p>השיחה הראשונה — חינם תמיד</p>
           </div>
-          <h1 className="aos-init" data-aos-delay="500" data-aos="fade-up">צור קשר</h1>
+          <h1 className="aos-init" data-aos-delay="500" data-aos="fade-up">בואו נדבר על העסק שלכם</h1>
         </div>
-        
+        <p className="aos-init text-center" data-aos-delay="600" data-aos="fade-up" style={{ maxWidth: '500px', margin: '0 auto 40px', opacity: 0.7 }}>
+          ממלאים פרטים → מקבלים שיחה תוך 24 שעות → לא מחויבים לכלום
+        </p>
+
         <div className="aos-init" data-aos-delay="700" data-aos="fade-up">
           <ContactForm />
         </div>
